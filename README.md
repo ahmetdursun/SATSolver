@@ -5,7 +5,7 @@ Boolean satisfiability problem is the problem of determining whether there is at
 
 SAT-Solvers are used for various applications in different domains such as model checking, combinatorial design, test pattern generation and so on. SAT Solvers developed in last twenty years significantly improved the performance and nowadays we have efficient SAT-Solvers. These modern SAT-Solvers are mainly based on two different algoritm. First is Conflict-Driven Clause learning algorithm which is a variant of Davis Putnam Logemann Loveland(DPLL) algorithm and second is stochastic local search algorithm. However stochastic local search algorithm is incomplete and returns an answer for some satisfiable formulas and may run forever for unsatisfiable formulas. 
 
-###DPLL
+### DPLL
 
 In this repository, I developed a DPLL-based SAT Solver algorithm just for demonstration. SATSolver algorithm is implemented under com.mobcom.solver package, file read and write processes are handled in com.mobcom.common package.
 
@@ -70,7 +70,7 @@ problem11     | 0.11          | 0.08          | 0.19           | 100            
 problem12     | 0.12          | 0.69          | 0.81           | 200                | 1200                  | 6                  
 
 As shown in table, it seems that number of variables affects the solving time if the ratio of clauses to variables remains same.
-It seems that if the number of clauses remains same, the time it takes to solve each problem decrease as the number of variables increases. The time it takes to solve problem 8 is about half the time it takes to solve problem 6. But actually this is not true, hardness of 3-Sat is depicted in the following figure (SAT-Solving: From Davis Putnam to Zchaff and Beyond):
+It seems that if the number of clauses remains same, the time it takes to solve each problem decrease as the number of variables increases. The time it takes to solve problem 8 is about half the time it takes to solve problem 6. But actually this inference is not true, hardness of 3-Sat is depicted in the following figure (SAT-Solving: From Davis Putnam to Zchaff and Beyond):
 
 ![Hardness of 3-Sat](hardness-3sat.png)
 
