@@ -8,13 +8,9 @@ import com.mobcom.solver.CNF;
 import com.mobcom.common.FileUtils;
 import com.mobcom.solver.DPLLService;
 
-import java.util.*;
-
 
 /**
  * Ahmet Dursun
- * 2015700186
- * CMPE436 - Assignment 1B
  */
 
 
@@ -28,9 +24,6 @@ public class App {
 
     public static void main(String[] args) {
 
-        int numberOfClause = 0;
-        int numberOfVariables = 0;
-        int numberOfGeneration = 0;
         try {
 
             long startfile = System.nanoTime();
@@ -69,7 +62,7 @@ public class App {
             double seconds = (double)elapsedTime / 1000000000.0;
             System.out.println(elapsedTime+" ns");
             System.out.println(seconds+" s");
-            System.out.println((System.nanoTime()-startfile)/1000000000.0+" s toplam");
+            System.out.println((System.nanoTime()-startfile)/1000000000.0+" s total");
 
         }catch(Exception ex){
             ex.printStackTrace();
@@ -80,10 +73,3 @@ public class App {
 
 
 }
-
-/*
-    private static void deneme(CNF cnfContent){
-        cnfContent.getClauses().remove(0);
-    }
-
-    */
